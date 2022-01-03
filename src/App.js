@@ -17,19 +17,22 @@ function App() {
     <div className="App">
       <Router>
         <Header></Header>
+        <div className="container">
         <Switch>
-          <Route path="/">
+          <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/movie/:imdbID">
+          <Route  path="/movie/:imdbID">
             <MovieDetail />
           </Route>
           <Route >
             <PageNotFound />
           </Route>
         </Switch>
+        </div>
         <Footer></Footer>
     </Router>
+  
     </div>
   );
 }
