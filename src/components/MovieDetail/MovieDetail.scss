@@ -1,9 +1,12 @@
 @import "../../common/colors.scss";
 
+
 .movie-section {
+  background: $primary-color;
+  margin-top: 2px;
   display: flex;
   justify-content: space-evenly;
-  padding: 40px 0px;
+  padding: 40px 20px;
   color: $font-primary;
   font-weight: 400;
 }

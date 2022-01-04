@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   fetchAsyncMovieOrShowDetail,
   getSelectedMovieOrShow,
-  removeSelectedMovieOrShow,
 } from "../../features/movies/movieSlice";
 
 const MovieDetail = () => {
