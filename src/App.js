@@ -11,13 +11,15 @@ import Home from "./components/Home/Home";
 import MovieDetail from "./components/MovieDetail/MovieDetail";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Header></Header>
-        <div className="container">
+       
         <Switch>
           <Route path="/" exact>
             <Home />
@@ -25,14 +27,21 @@ function App() {
           <Route path="/home" exact>
             <Home />
           </Route>
+          <Route path="/about" exact>
+            <About />
+          </Route>
+          <Route path="/contact" exact>
+            <Contact />
+          </Route>
           <Route  path="/movie/:imdbID">
             <MovieDetail />
           </Route>
+
           <Route >
             <PageNotFound />
           </Route>
         </Switch>
-        </div>
+        
         <Footer></Footer>
     </Router>
   

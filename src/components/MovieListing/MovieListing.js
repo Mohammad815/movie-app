@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { getAllMovies, getAllShows } from "../../features/movies/movieSlice";
 import MovieCard from "../MovieCard/MovieCard";
@@ -29,15 +30,18 @@ const MovieListing = () => {
       </div>
     );
   return (
-    <div className="movie-wrapper">
-      <div className="movie-list">
-        <h2>Movies</h2>
+    <div className="movie-wrapper mt-5">
+      <Container>
+      <h2 className="text-center">Our Latest Movies</h2>
+      <div className="movie-list text-center">
+       
         <div className="movie-container">{renderMovies}</div>
       </div>
-      <div className="show-list">
-        <h2>Shows</h2>
+      <div className="show-list text-center mt-5">
+        <h2>Our Latest History Movie</h2>
         <div className="movie-container">{renderShows}</div>
       </div>
+      </Container>
     </div>
   );
 };

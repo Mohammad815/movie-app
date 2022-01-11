@@ -6,27 +6,6 @@ import "./Header.scss";
 
 const Header = () => {
     return (
-      //   <div className="header">
-      //   <Link to="/">
-      //     <div className="logo">Movie App</div>
-      //   </Link>
-      //   <div>
-      //   <div className="right-side">
-      //     <Link to="/home">
-      //       <div >Home</div>
-      //     </Link>
-      //     <Link to="/home">
-      //       <div >About</div>
-      //     </Link>
-      //     <Link to="/home">
-      //       <div >Contact US</div>
-      //     </Link>
-      //     <Link to="/home" className="user-image">
-      //     <img src={user} alt="user" />
-      //     </Link>    
-      //     </div>
-      //   </div>
-      // </div>
       <div className="header">     
           <Navbar className="navbar" collapseOnSelect expand="lg"   variant="dark">
           <Container>
@@ -34,15 +13,15 @@ const Header = () => {
               Movie App
           </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse className="text-black" id="responsive-navbar-nav">
+          <Navbar.Collapse  id="responsive-navbar-nav">
               <Nav className="ms-auto navbar">
               <Link className="navLink" to="/home">
                 <div >Home</div>
             </Link>
-            <Link className="navLink" to="/home">
+            <Link className="navLink" to="/about">
                 <div >About</div>
             </Link>
-            <Link className="navLink" to="/home">
+            <Link className="navLink" to="/contact">
               <div >Contact US</div>
             </Link>
             <Link  to="/home" className="user-image">
